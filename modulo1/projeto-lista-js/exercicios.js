@@ -38,11 +38,11 @@ console.log(resultado1)
 }
 
 // EXERCÍCIO 03
-function calculaIMC() {
+function calculaIMC(peso, altura) {
   // implemente sua lógica aqui
   
-  const imc = peso / (altura1 * altura1)
-  
+  const imc = peso / (altura * altura1)
+  return imc
 
 }
 
@@ -69,9 +69,9 @@ console.log(respostas)
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-  const frase = ("transformar")
+  const frase = (string)
   const frase1 = frase.toUpperCase()
- return console.log(frase1)
+ return frase1
    
 }
 
@@ -86,22 +86,27 @@ function calculaIngressosEspetaculo(custo, valorIngresso) {
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-
+const tamanho = (string1.length === string2.length) 
+return tamanho
 
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
-  array = [1, 2, 3]
-
-
+  return array[0]
+  
 }
 
+
 // EXERCÍCIO 10
+
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
 
+  const ultimo1 = (array[array.length -1])
+
+  return ultimo1
 }
 
 
@@ -109,11 +114,19 @@ function retornaUltimoElemento(array) {
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
 
+  array.push(array.splice(0,1)[0])
+  const ultimo = (array[array.length -2])
+  array.push(array.splice(ultimo,1)[array.length -1])
+ 
+  return array
+
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
+  const result = string1.toUpperCase() === string2.toUpperCase()
+  return result
 
 }
 
