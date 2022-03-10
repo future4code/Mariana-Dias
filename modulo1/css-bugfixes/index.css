@@ -25,6 +25,7 @@ button:focus {
     color: white;
 }
 
+
 img {
     width: 80px;
 }
@@ -49,7 +50,7 @@ div img {
 
 
 .botao-amarelo:hover {
-    background-color: #c44f00;
+    background-color: rgb(192, 186, 186);
 }
 
 .container {
@@ -131,6 +132,13 @@ td button {
 }
 
 #back-button:hover {
-    background-color: #635a3d
+    background-color: rgb(212, 207, 207)
 }
 
+
+button:active{
+    color: white;
+}
+button:hover{
+    background-color: rgb(212, 209, 209);
+}
