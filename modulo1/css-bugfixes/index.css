@@ -12,13 +12,15 @@
 h2 {
     background-color: #fe7e02;
     padding: 10px 5px 10px 5px;
-    color: white;
+    color: rgb(252, 247, 247);
     text-align: center;
 }
 
 input {
     height: 20px;
     width: 500px;
+    border-bottom: 5px solid black;
+    
 }
 
 button:focus {
