@@ -1,0 +1,92 @@
+.titulo {
+background-color:pink;
+}
+#espaco-entre{
+    padding: 20px;
+
+}
+
+.titulo2 {
+    color: black;
+}
+.titulo3 {
+    color: rgb(179, 21, 179);
+}
+
+.links-de-acesso{
+    color: rgb(224, 154, 224);
+    margin: 20px;
+}
+.titulo4{
+    color: rgb(156, 46, 129);
+    background-color: pink;
+    width: 1426px;
+    height: 1426px;
+    border: 01px solid black;
+    height: 45px;
+    
+}
+.nome-loja{
+    color: pink;
+    background-color: darkmagenta;
+}
+.nome-loja2{
+    color: pink;
+    background-color: darkmagenta;
+}
+.nome-loja3{
+    color: pink;
+    background-color: darkmagenta;
+}
+.mudar-cor{
+    color: rgb(247, 244, 244);
+    background-color: rgb(0, 0, 0);
+    width: 822px;
+}
+
+.colorir{
+    background-color: black;
+    color: pink;
+}
+
+.bloco1{
+    background-color: black;
+    color: white;
+}
+.bloco2{
+    background-color: black;
+    color: white;
+}
+.bloco3{
+    background-color: black;
+    color: white;
+}
+
+.bloco4{
+    background-color: black;
+    color: white;
+}
+.bloco5{
+    background-color: black;
+    color: white;
+}
+.colorir-nome{
+color: white;
+background-color: black;
+}
+
+.colorir-funcionarios{
+    background-color: black;
+    color: white;
+}
+.tudo{
+    background-color: black;
+    color: white;
+    width: 400px;
+}
+
+
+    #img{
+        margin-top: 10px;
+        width: 100%;
+    }
