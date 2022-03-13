@@ -36,9 +36,79 @@ div a {
 }
 
 #img{
+    width: 250px;
     margin: 0 auto;
+    position: fixed;
+    top: 99px;
+    left: 581px;
 
 }
 .emoji{
-    width: 100vw;
+    width: 500vw;
+    position: relative;
+
+   
+    
+}
+#imagem-joias{
+
+    height: 330px;
+    margin: 55px;
+}
+
+#imagem-for{
+    height: 278px;
+    margin: 55px;
+}
+
+.centro{
+    text-align: center;
+    margin: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+div p {
+    margin: 4%;
+}
+
+.contatos {
+    margin: 50px;
+}
+.contatos1{
+    margin: 30px;
+}
+.redes{
+    margin: 50px;
+}
+.redes1{
+    margin: 30px;
+}
+.imageminsta{
+    height: 50px;
+}
+.imagenlin{
+    height: 50px;
+}
+.imagemtwitter{
+    height: 50px;
+}
+
+#imagfundo{
+    width: 100vW;
+    margin: 0 auto;
+    height: 89vH;
+
+}
+
+.container{
+    text-align: center;
+}
+
+.informacao {
+text-align: center;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 99px;
+    left: 520px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
