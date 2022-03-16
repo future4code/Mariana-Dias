@@ -29,8 +29,8 @@ footer{
 }
 
 main{
-    height: 86vh;
-    padding: 39px;
+    height: 100%;
+    padding: 110px; 
     text-align: center;
     display: grid;
     display: grid;
@@ -39,6 +39,7 @@ main{
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     align-items: center;
+    
     
 }
 
@@ -58,7 +59,33 @@ section video{
 }
 
 #estilo{
-    border: 1px solid black;
+   
     height: 210px;
     width: 236px;
 }
+section{
+     border: 1px solid black;
+}
+
+@media screen and  (max-device-width:320px){
+    .centro{
+    grid-template-columns: repeat(1,1fr);
+}
+
+}
+
+    @media screen and (min-device-width:320px) and (max-device-width:520px){
+        .centro{
+            display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+        align-items: center;
+    }
+}
+
+    @media screen and (min-device-width:520px) and (max-device-width:1000px){
+        .centro{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    }
