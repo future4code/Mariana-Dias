@@ -54,10 +54,6 @@ class Post extends React.Component {
     console.log('Curtiu!');
   }
 
-  onChangeComentario = (event) => {
-    this.setState({ comentando: event.target.value });
-  };
-
   onClickComentario = () => {
     this.setState({
       comentando: !this.state.comentando, 
