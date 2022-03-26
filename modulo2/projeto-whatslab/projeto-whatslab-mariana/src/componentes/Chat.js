@@ -33,13 +33,14 @@ margin-left: 10px;
 border-radius: 6px;
 font-family: system-ui;
 font-size: 13px;
-box-shadow: 4px 9px 11px 2px
+box-shadow: 4px 9px 11px 2px;
 `
 const Botao = styled.button`
 border-radius: 4px;
-
+` 
+const Usuario = styled.p`
+font-weight: 700;
 `
-
 
 
 class Chat extends React.Component{
@@ -95,7 +96,7 @@ class Chat extends React.Component{
         const mensagens = this.state.conversa.map((index) => {
             return ( 
                 <BalaoDeMensagem>
-                <p>{index.remetente}: {index.mensagem}</p>
+                <div><Usuario>{index.remetente}</Usuario> {index.mensagem}</div>
                 </BalaoDeMensagem>
             )
         })
