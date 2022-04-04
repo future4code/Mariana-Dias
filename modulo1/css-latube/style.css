@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    display: flex;
+    background-color: green;
+    justify-content: space-between;
+    padding: 7px;
+    color: black;
+}
+
+input{
+    width: 150px;
+    height: 25px;
+    border-radius: 2px;
+    border: none;
+    display: flex;
+}
+
+footer{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    align-items: center;
+}
+
+main{
+    height: 100%;
+    padding: 110px; 
+    text-align: center;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    align-items: center;
+    
+    
+}
+
+.centro img{
+    height: 157px;  
+    
+}
+
+
+section video{
+    height: 100vh;
+    padding: 20px;
+}
+
+.titulo{
+    padding: 25px;
+}
+
+#estilo{
+   
+    height: 210px;
+    width: 236px;
+}
+section{
+     border: 1px solid black;
+}
+
+@media screen and  (max-device-width:320px){
+    .centro{
+    grid-template-columns: repeat(1,1fr);
+}
+
+}
+
+    @media screen and (min-device-width:320px) and (max-device-width:520px){
+        .centro{
+            display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+        align-items: center;
+    }
+}
+
+    @media screen and (min-device-width:520px) and (max-device-width:1000px){
+        .centro{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    }
