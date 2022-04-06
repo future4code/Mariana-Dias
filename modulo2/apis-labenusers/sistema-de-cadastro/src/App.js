@@ -11,7 +11,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-height: 50vh;
+height: 100vh;
 width: 50vw;
 background-color: aqua;
 margin: 0 auto;
@@ -82,7 +82,7 @@ onChangeEmail = (event) => {
            telas= <ListaDeUsuario/>
           break;
           default:
-           telas = <p>Nenhuma mensagem inserida</p>
+           telas = <p>Página não encontrada!</p>
             break;
     }    
     return (

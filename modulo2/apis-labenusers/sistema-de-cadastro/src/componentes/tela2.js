@@ -12,6 +12,17 @@ const headers = {
   background-color: red;
   `
 
+  const Lista = styled.div`
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
+  height: 18px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  `
+
 
 export default class ListaDeUsuario extends React.Component {
     state = {
@@ -26,11 +37,11 @@ export default class ListaDeUsuario extends React.Component {
         const url =
           "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users";
         
-        axios
-          .get(url, headers)
-          .then((res) => {
+         axios
+            .get(url, headers)
+            .then((res) => {
             this.setState({
-              usuario: res.data
+             usuario: res.data
             });
           })
           .catch((err) => {
@@ -41,7 +52,7 @@ export default class ListaDeUsuario extends React.Component {
 
     deleteUser = (id) => {
         const urll = `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${id}`
-        alert("Usuário será deletado")
+         alert("Usuário será deletado")
         axios
         .delete( urll, headers)
         .then((res) => {
@@ -56,14 +67,18 @@ export default class ListaDeUsuario extends React.Component {
 render() {
 
 const componentsUsuarios = this.state.usuario.map((usuarios) => {
-    return <li key={usuarios.id}>{usuarios.name} <button onClick={() => this.deleteUser(usuarios.id)}>X</button></li>;
-    });
+      return <Lista key={usuarios.id}>{usuarios.name} 
+         <button onClick={() => this.deleteUser(usuarios.id)}>Deletar</button>
+          </Lista>;
+     });
 
     
  return (
     <div>
         <h2>Lista de Usuários</h2>
+        <div>
         {componentsUsuarios}
+        </div>
     </div>
 );
 };
