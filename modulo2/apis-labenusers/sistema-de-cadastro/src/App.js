@@ -34,7 +34,6 @@ export default class App extends React.Component {
     inputEmail: "",
   }
  
-
   createUser = () => {
     const body = {
       name: this.state.inputName,
@@ -55,15 +54,12 @@ export default class App extends React.Component {
     });
 };
 
-
-
 onChangeName = (event) => {
  this.setState({inputName: event.target.value})
 }
 onChangeEmail = (event) => {
   this.setState({inputEmail: event.target.value})
  }
-  
   render(){
       let telas
     switch (this.state.paginaEntrada){
