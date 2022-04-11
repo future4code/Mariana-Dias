@@ -12,6 +12,8 @@ const headers = {
 }; 
 
 const Pai = styled.div`
+background-color: #303134;
+height: 100vh;
 `
 
  export default class App extends React.Component{
